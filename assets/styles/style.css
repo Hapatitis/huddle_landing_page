@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url(/assets/fonts/Poppins-Black.ttf)
+         url(/assets/fonts/Poppins-Bold.ttf)
+         url(/assets/fonts/Poppins-Regular.ttf);
+    font-weight: 600;
+    font-style: normal;
+}
+body{
+    background-image: url('/assets/images/bg-desktop.svg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    background-color: blueviolet;
+    
+}
+.container {
+
+}
+.navigation {
+
+}
+.nav-logo {
+    margin: 50px 50px;
+}
+
+.body-container {
+   display: flex;
+   flex-direction: row;
+}
+.body-image {
+    width: 50%;
+    padding-left: 100px;
+    padding-top: 100px;
+}
+.example-photo {
+
+}
+.body-text{
+    flex-direction: column;
+    width: 30%;
+    padding-top: 7%;
+    float: right;
+    color: white;
+}
+.body-title {
+    font-size: 34px;
+}
+.body-paragraph {
+    padding-top: ;
+}
+.button-container {
+
+}
+.footer-container {
+
+}
+.Facebook {
+
+}
+.Twitter {
+
+}
+.Instagram {
+
+}
+.attribution {
+    
+}
