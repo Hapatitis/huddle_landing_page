@@ -1,69 +1,100 @@
-@font-face {
-    font-family: 'Poppins-Regular';
-    src: url(/assets/fonts/Poppins-Black.ttf)
-         url(/assets/fonts/Poppins-Bold.ttf)
-         url(/assets/fonts/Poppins-Regular.ttf);
-    font-weight: 600;
-    font-style: normal;
-}
-body{
-    background-image: url('/assets/images/bg-desktop.svg');
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;  
-    background-color: blueviolet;
-    
+body {
+  background-image: url("/assets/images/bg-desktop.svg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: blueviolet;
+  font-family: "Poppins-Regular";
 }
 .container {
-
+  overflow: auto;
 }
 .navigation {
-
+  align-items: center;
+  padding-left: 40px;
 }
 .nav-logo {
-    margin: 50px 50px;
+  margin: 50px 50px;
 }
 
 .body-container {
-   display: flex;
-   flex-direction: row;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 .body-image {
-    width: 50%;
-    padding-left: 100px;
-    padding-top: 100px;
+  /* padding-top: 10px; */
 }
 .example-photo {
-
+  /* max-width: 100%; */
+  height: 140%;
+  position: relative;
 }
-.body-text{
-    flex-direction: column;
-    width: 30%;
-    padding-top: 7%;
-    float: right;
-    color: white;
+.body-text {
+  flex-direction: column;
+  width: 30%;
+  padding-top: 1%;
+  padding-left: 1%;
+  float: right;
+  color: white;
+  align-items: center;
+  margin-left: 100px;
+  position: relative;
+  box-sizing: border-box;
 }
 .body-title {
-    font-size: 34px;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
 }
 .body-paragraph {
-    padding-top: ;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
 }
-.button-container {
-
+.button {
+  font-family: "Open Sans", sans-serif;
+  background-color: white;
+  border-radius: 25px;
+  height: 50px;
+  color: blueviolet;
+  text-align: center;
+  vertical-align: middle;
+  width: 170px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+.button:hover {
+  background-color: violet;
+  color: white;
 }
 .footer-container {
-
+  justify-content: flex-end;
+  display: flex;
+  padding-top: 10%;
 }
-.Facebook {
-
+.footer_item {
+  text-align: center;
+  width: 20px;
+  border-radius: 50px;
+  border-style: solid;
+  border-width: 1px;
+  color: white;
+  vertical-align: center;
+  padding: 10px;
+  margin: 5px;
 }
-.Twitter {
-
+.footer_item:hover {
+  color: violet;
 }
-.Instagram {
 
-}
 .attribution {
-    
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.body-title {
+  line-height: 1.35;
+}
+.body-paragraph {
+  line-height: 1.8;
+  letter-spacing: 2px;
 }
