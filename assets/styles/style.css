@@ -3,7 +3,7 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: blueviolet;
+  background-color: rgb(112, 17, 201);
   font-family: "Poppins-Regular";
 }
 .container {
@@ -18,37 +18,37 @@ body {
 }
 
 .body-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  position: absolute;
 }
+
 .body-image {
-  /* padding-top: 10px; */
+  max-width: 100%;
+  position: relative;
+  z-index: 1;
+  float: left;
 }
 .example-photo {
-  /* max-width: 100%; */
   height: 140%;
-  position: relative;
+  margin-left: 100px;
+  width: 130%;
 }
 .body-text {
-  flex-direction: column;
   width: 30%;
-  padding-top: 1%;
-  padding-left: 1%;
-  float: right;
   color: white;
   align-items: center;
-  margin-left: 100px;
+  margin-top: 50px;
+  margin-right: 130px;
   position: relative;
-  box-sizing: border-box;
+  z-index: 1;
+  float: right;
 }
 .body-title {
-  font-size: 28px;
+  font-size: 35px;
   font-family: "Poppins", sans-serif;
 }
 .body-paragraph {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
 }
 .button {
   font-family: "Open Sans", sans-serif;
@@ -69,7 +69,7 @@ body {
 .footer-container {
   justify-content: flex-end;
   display: flex;
-  padding-top: 10%;
+  margin-top: 800px;
 }
 .footer_item {
   text-align: center;
@@ -97,4 +97,53 @@ body {
 .body-paragraph {
   line-height: 1.8;
   letter-spacing: 2px;
+}
+
+@media all and (max-width: 500px) {
+  body {
+    background-image: url(/assets/images/bg-mobile.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .navigation {
+    padding-left: 0px;
+    margin-right: 200px;
+  }
+  .nav-logo {
+    max-width: 50%;
+  }
+  .body-image {
+    width: 70%;
+    align-self: center;
+    margin-right: 150px;
+  }
+  .example-photo {
+    margin-left: 30px;
+    align-items: center;
+  }
+  .body-text {
+    width: 200px;
+    color: white;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 150px;
+    position: relative;
+    z-index: 1;
+    float: none;
+  }
+  .body-title {
+    font-size: 15px;
+  }
+  .body-paragraph {
+    align-self: center;
+    font-size: 15px;
+    line-height: 15px;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+  }
+  .footer-container {
+    margin-top: 650px;
+    margin-right: 175px;
+  }
 }
